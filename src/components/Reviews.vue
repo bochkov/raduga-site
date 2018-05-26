@@ -1,6 +1,6 @@
 <template>
-    <el-row id="reviews" class="celem" type="flex" :gutter="10" justify="center">
-        <el-col :xl="8" :lg="8" :md="8" :sm="20" :xs="20"
+    <el-row id="reviews" type="flex" class="celem" align="middle" justify="space-around">
+        <el-col :xs="22" :sm="22" :md="12" :lg="6" :xl="6"
           v-for="(review, index) in reviews" :key="index">
           <el-card class="box-card">
             <el-rate class="rating" v-model="review.rating" disabled text-color="#ff9900"></el-rate>
@@ -40,6 +40,12 @@ export default {
           url: "",
           text: "Гостиница - говно. Кроватей мало. Ночевали на коврике!",
           rating: 4
+        },
+        {
+          author: "Довольный посетитель",
+          url: "",
+          text: "А нам понравилось! Все рядом, все под рукой. Вежливый персонал.",
+          rating: 5
         }
       ]
     };
@@ -47,24 +53,22 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 #reviews {
   font-family: "Caveat", sans-serif;
   font-size: 1.5em;
-  background-color: azure;
-  padding-left: 10px;
-  padding-right: 10px;
+  background-color: #c5f9c5;
 }
 .author {
   text-align: right;
   font-size: 0.8em;
-  padding: 5px;
+  padding-top: 20px;
 }
 .rating {
   text-align: center;
-  padding: 10px;
+  padding-bottom: 20px;
 }
 .box-card {
-  min-width: 300px;
+  margin: 0 20px;
 }
 </style>

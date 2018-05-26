@@ -1,15 +1,11 @@
 <template>
-    <el-row id="map-row" type="flex" justify="center" class="celem">
-        <el-col :span="20">
-            <div id="map" />
-        </el-col>
-    </el-row>
+    <div id="map" />
 </template>
 
 <script>
 </script>
 
-<style scope>
+<style scoped>
 #map-row {
     background-color: burlywood;
 }
