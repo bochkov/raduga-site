@@ -57,7 +57,7 @@ export default {
 #reviews {
   font-family: "Caveat", sans-serif;
   font-size: 1.5em;
-  background-color: #c5f9c5;
+  background-color: #eaffed;
 }
 .author {
   text-align: right;

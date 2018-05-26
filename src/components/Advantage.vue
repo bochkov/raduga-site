@@ -26,6 +26,6 @@
 
 <style>
 #adv-row {
-    background-color: #c5f9c5;
+
 }
 </style>

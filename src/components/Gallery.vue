@@ -1,10 +1,10 @@
 <template>
     <el-row id="carousel-row" type="flex" justify="center" class="celem">
         <el-col style="width: 1000px;">
-            <el-carousel :interval="10000" trigger="click" height="700px" indicator-position="outside">
-                <el-carousel-item v-for="(image, index) in images" :key="index">
-                    <span class="img-title">{{image.title}}</span>
-                    <img :src="image.url" />
+            <el-carousel :interval="10000" trigger="click" height="600px" indicator-position="outside">
+                <el-carousel-item v-for="index in 10" :key="index">
+                    <span class="img-title">title {{index}}</span>
+                    <img :src="rurl(index)" />
                 </el-carousel-item>
             </el-carousel>
         </el-col>
@@ -13,22 +13,31 @@
 
 <script>
 export default {
+  methods: {
+    rurl: function(idx) {
+      var ret = 
+        "https://fakeimg.pl/1000x600/333/cccc00?text=Raduga+" +
+        idx +
+        "&font=lobster";
+        return ret;
+    }
+  },
   data() {
     return {
-        images: [
-            {
-                url: "https://fakeimg.pl/1000x700/333/cccc00?text=Raduga+1&font=lobster",
-                title: 'title 1'
-            },
-            {
-                url: "https://fakeimg.pl/1000x700/333/cccc00?text=Raduga+2&font=lobster",
-                title: 'title 2'
-            },
-            {
-                url: "https://fakeimg.pl/1000x700/333/cccc00?text=Raduga+3&font=lobster",
-                title: 'title 3'
-            }
-        ]
+      images: [
+        {
+          url: "",
+          title: "title 1"
+        },
+        {
+          url: "",
+          title: "title 2"
+        },
+        {
+          url: "",
+          title: "title 3"
+        }
+      ]
     };
   }
 };
@@ -36,9 +45,9 @@ export default {
 
 <style>
 #carousel-row {
-  background-color: #ddffaa;
+  background-color: #eaffed;
 }
 .img-title {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 </style>

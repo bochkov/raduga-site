@@ -41,9 +41,6 @@ export default {
 </script>
 
 <style>
-#contacts-row {
-    background-color: #f4fffb;
-}
 .contact {
     text-align: center;
 }

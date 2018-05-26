@@ -62,7 +62,10 @@ dt {
   text-align: center;
   padding: 0;
   padding-top: 40px;
-  background-color: #ddffaa;
+  /* background-color: #ddffaa; */
+  /* background-image: url("./assets/mainpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 .el-main {
   padding: 0;
@@ -79,13 +82,14 @@ dt {
   text-align: justify;
 }
 .title {
-  font-size: 3em;
+  font-size: 5em;
+  font-weight: bolder;
 }
 .title-2 {
   font-size: 2em;
 }
 .subtitle {
-  font-size: 1.2em;
+  font-size: 2.5em;
 }
 .el-button {
   margin: 5px 5px;
