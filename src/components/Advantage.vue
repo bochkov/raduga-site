@@ -1,30 +1,59 @@
 <template>
 <el-row id="adv-row" type="flex" class="celem" justify="center">
     <el-col :span="20">
-        <div class="title-2">Наши преимущества</div>
+        <div class="subtitle">
+            Добро пожаловать!
+        </div>
+        <div class="title-2">
+            Будем рады видеть вас в нашем хостеле.<br/>
+        </div>
         <div class="text">
             <el-row class="celem" justify="space-beween" type="flex">
                 <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
-                    Proin interdum blandit maximus. Aliquam turpis nisi, dignissim a arcu at, tempor vestibulum arcu. Ut quis dictum elit. Nam et auctor tortor. Aenean semper orci id risus sollicitudin, quis fermentum urna dignissim. Morbi semper molestie dapibus. Suspendisse ultrices, magna eu aliquam ornare, ipsum felis faucibus arcu, id rhoncus magna justo vitae nisl. In hac habitasse platea dictumst. Donec iaculis porta neque ac blandit. Nam ante justo, tincidunt eget nisl non, suscipit lobortis magna.
+                    <span class="subtitle-2">Расположение</span>
+                    <p>
+                        &laquo;Радуга&raquo; находится недалеко от центра города в 5 минутах ходьбы от &laquo;Екатеринбург-Арены&raquo;. 
+                        Хостел славится не только своим уютом и гостеприимством, 
+                        но и замечательным расположением относительно основных элементов современной инфраструктуры города.
+                    </p>
                 </el-col>
                 <el-col class="hidden-xs-only" :xs="23" :sm="23" :md="7" :lg="7" :xl="7" :offset="1">
-                    <img src="https://fakeimg.pl/300/333/cccc00?text=Raduga+1&font=lobster"/>
+                    <img src="../assets/adv1.png"/>
                 </el-col>
             </el-row>
             <el-row class="celem" type="flex" justify="space-between">
                 <el-col class="hidden-xs-only" :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
-                    <img src="https://fakeimg.pl/300/333/cccc00?text=Raduga+2&font=lobster"/>
+                    <img src="../assets/adv2.png"/>
                 </el-col>
                 <el-col  :xs="23" :sm="23" :md="15" :lg="15" :xl="15" :offset="1">
-                    Integer convallis vel est sed aliquet. Integer facilisis justo id tellus varius ultricies. Donec a ultrices velit. In placerat elit libero. Suspendisse non lobortis massa, at efficitur enim. Ut vel libero et dolor placerat feugiat. Curabitur sed quam vitae orci porta volutpat.
+                    <span class="subtitle-2">Наши услуги</span>
+                    <p>
+                        Мы предоставялем высокий уровень комфорта. В вашем распоряжении сейф, 
+                        стиральная машина, утюг и гладильная доска. 
+                    </p>
+                    <p>
+                        Настольные игры и книги помогут скрасть досуг. 
+                        Также у нас в продаже большой выбор сувениров и действует гибкая система скидок.
+                    </p>
                 </el-col>
             </el-row>
             <el-row class="celem" type="flex" justify="space-between">
                 <el-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
-                    Nullam bibendum faucibus sapien, nec vulputate justo convallis a. Sed dapibus venenatis rutrum. In quis blandit enim, in bibendum dui. Maecenas ac viverra nisi. Vivamus at imperdiet nibh. Integer at posuere odio. Suspendisse nec leo ex. Nulla tempor iaculis purus, sit amet fermentum leo ultricies sit amet. Maecenas nec ligula id neque vulputate aliquam porttitor at lorem. Maecenas facilisis purus eu lacus molestie, et commodo enim auctor. Duis consequat condimentum mauris vitae tincidunt.
+                    <span class="subtitle-2">Комфорт и уют</span>
+                    <p>
+                        Хостел располагает тремя номера с двухъярусными кроватями, которые придутся на вкус любому путешественнику.
+                        Возле каждой кровати есть индивидуальная розетка.
+                        Бесплатный Wi-Fi на всей территории хостела.
+                    </p>
+                    <p>
+                        В хостеле имеется оборудованная общая кухня со всей необходимой техникой для самостоятельного приготовления пищи. На кухне имеется варочная поверхность, холодильник, микроволновая печь. 
+                    </p>
+                    <p>
+                        Имеются 2 санузла с душевыми кабинами, а также стиральная машина и гладильная доска с утюгом, гостям бесплатно предоставляются все необходимые гигиенический средства. Гости могут бесплатно воспользоваться феном.
+                    </p>
                 </el-col>
                 <el-col class="hidden-xs-only" :xs="23" :sm="23" :md="7" :lg="7" :xl="7" :offset="1">
-                    <img src="https://fakeimg.pl/300/333/cccc00?text=Raduga+3&font=lobster"/>
+                    <img src="../assets/adv3.png"/>
                 </el-col>
             </el-row>
         </div>
@@ -34,5 +63,6 @@
 
 <style>
 #adv-row {
+    background-color: #eaffed;
 }
 </style>

@@ -2,9 +2,9 @@
     <el-row id="carousel-row" type="flex" justify="center" class="celem hidden-sm-and-down">
         <el-col style="width: 1000px;">
             <el-carousel :interval="10000" trigger="click" height="600px" indicator-position="outside">
-                <el-carousel-item v-for="index in 10" :key="index">
-                    <span class="img-title">title {{index}}</span>
-                    <img :src="rurl(index)" />
+                <el-carousel-item v-for="(image, index) in images" :key="index">
+                    <span class="img-title" v-html="image.title"></span>
+                    <img :src="image.url" />
                 </el-carousel-item>
             </el-carousel>
         </el-col>
@@ -13,29 +13,24 @@
 
 <script>
 export default {
-  methods: {
-    rurl: function(idx) {
-      var ret =
-        "https://fakeimg.pl/1000x600/333/cccc00?text=Raduga+" +
-        idx +
-        "&font=lobster";
-        return ret;
-    }
-  },
   data() {
     return {
       images: [
         {
-          url: "",
-          title: "title 1"
+          url: require("../assets/gal5.png"),
+          title: "В пяти минутах ходьбы - &laquo;Екатеринбург-Арена&raquo;"
         },
         {
-          url: "",
-          title: "title 2"
+          url: require("../assets/gal4.png"),
+          title: "Розовая комната"
         },
         {
-          url: "",
-          title: "title 3"
+          url: require("../assets/gal1.png"),
+          title: "Желтая комната"
+        },
+        {
+          url: require("../assets/gal3.png"),
+          title: "В одной из комнат"
         }
       ]
     };

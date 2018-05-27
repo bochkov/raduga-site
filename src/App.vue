@@ -4,8 +4,8 @@
       <Header />
     </el-header>
     <el-main>
-      <About />
       <Advantage />
+      <About />
       <Gallery />
       <Map />
       <Reviews />
@@ -59,10 +59,9 @@ body {
   text-align: center;
   padding: 0;
   padding-top: 40px;
-  /* background-color: #ddffaa; */
-  /* background-image: url("./assets/mainpic.jpg");
+  background-image: url("./assets/mainpic.png");
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 .el-main {
   padding: 0;
@@ -85,6 +84,9 @@ body {
 }
 .title-2 {
   font-size: 2em;
+}
+.subtitle-2 {
+  font-size: 1.2em;
 }
 .subtitle {
   font-size: 2.5em;

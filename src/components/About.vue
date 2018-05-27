@@ -1,17 +1,50 @@
 <template>
 <el-row id="about-row" type="flex" class="celem" justify="center">
     <el-col :span="20">
-        <div class="title-2">О нас</div>
+        <div class="title-2"></div>
         <div class="text">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac dapibus lectus. Etiam at lorem accumsan nulla semper pellentesque vel id odio. Aliquam erat volutpat. Quisque ullamcorper magna vitae euismod dignissim. Integer et erat at libero lacinia molestie sit amet dapibus mi. Donec nunc nisi, cursus non vulputate et, blandit non dolor. Ut tincidunt ultrices augue, eu hendrerit ante tristique commodo. Ut consectetur urna et scelerisque feugiat. Pellentesque convallis pulvinar est in blandit.
-Phasellus sed faucibus felis. Cras facilisis nisi justo, at faucibus velit gravida non. Donec auctor, ipsum et scelerisque pulvinar, tortor lorem tincidunt quam, in cursus libero ante in massa. Donec sed maximus est, vel tristique est. Aliquam eu lorem non ipsum suscipit pellentesque ac vitae nisl. Curabitur turpis quam, dignissim vel lacus eget, fermentum bibendum ipsum. Vestibulum nec volutpat nibh, ullamcorper gravida augue. Phasellus ullamcorper vitae arcu eget gravida. Quisque maximus placerat lorem non feugiat. Nam interdum mi vitae hendrerit venenatis. Maecenas euismod diam leo. Nunc ullamcorper tincidunt sollicitudin. Fusce ac ligula vitae dui blandit mattis.
+            <span class="subtitle-2">Стоимость проживания - от 449 ₽ в сутки.</span>
+            <p class="ulist">
+                <span class="list-title">Бесплатно:</span>
+                <ul>
+                    <li>Варочная плитка и микроволновая печь</li>
+                    <li>Холодильник</li>
+                    <li>Утюг и гладильная доска</li>
+                    <li>Настольные игры, книги</li>
+                    <li>Вызов такси</li>
+                </ul>
+            </p>
+
+            <p class="ulist">
+                <span class="list-title">Платно:</span>
+                <ul>
+                    <li>Сейф</li>
+                    <li>Стиральная машина</li>
+                </ul>
+            </p>
+
+            <p class="ulist">
+                <span class="list-title">В хостеле действует гибкая система скидок:</span>
+                <ol>
+                    <li>Студентам - 10%</li>
+                    <li>Группам от 5 человек - 7%</li>
+                    <li>При проживание более 5 дней - 7%</li>
+                    <li>При оплате единовременно за месяц - 20%</li>
+                    <li>Скидки не суммируются (исключение постоянным клиентам дополнительная скидка - 2%, со второго посещения).</li>
+                </ol>
+            </p>
         </div>
     </el-col>
 </el-row>
 </template>
 
 <style>
-#about-row {
-    background-color: #eaffed;
+.ulist .list-title {
+    font-weight: bold;
+}
+
+.ulist ul, .ulist ol {
+    list-style: none;
+    margin-top: 0;
 }
 </style>

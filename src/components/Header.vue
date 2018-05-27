@@ -1,76 +1,47 @@
 <template>
+<div>
+  <div>
+    <img src="../assets/logo.png" alt="Хостел Радуга" id="mainlogo" />
+  </div>
     <el-row type="flex" align="top">
-        <el-col :span="20">
-            <div class="title" v-html="this.coloredTitle"></div>
-            <div class="subtitle" v-html="this.subtitle"></div>
+        <el-col :span="16">
         </el-col>
-        <el-col class="icons" :span="4">
+        <el-col class="icons" :span="8">
             <a href="https://instagram.com/hostelraduga" target="_blank">
-                <el-button size="small" circle icon="fab fa-instagram fa-2x"></el-button>
+                <el-button size="mini" circle icon="fab fa-instagram fa-2x"></el-button>
             </a>
+            <a href="https://vk.com/raduga_hostelekb" target="_blank">
+                <el-button size="mini" circle icon="fab fa-vk fa-2x"></el-button>
+            </a>
+            <a href="mailto:raduga-hostelekb@yandex.ru" target="_blank">
+                <el-button size="mini" circle icon="fas fa-envelope fa-2x"></el-button>
+            </a>
+            <p class="subtitle-2 phone">
+                +7 (912) 24-27-233
+                <br/>
+                +7 (912) 29-44-460
+            </p>
         </el-col>
     </el-row>
+</div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      title: "Хостел &laquo;Радуга&raquo;",
-      subtitle: "Рады вам!"
-    };
-  },
-  methods: {
-    getRandomColor: function() {
-      var letters = "0123456789ABCDEF";
-      var color = "#";
-      for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      return color;
-    }
-  },
-  computed: {
-    coloredTitle: function() {
-      var inHtml = false;
-      var ret = "";
-      var ht = "";
-      for (var i = 0; i < this.title.length; ++i) {
-        var ch = this.title.charAt(i);
-        if (ch === "&") {
-          inHtml = true;
-        }
 
-        if (!inHtml)
-          if (ch === " ") ret = ret + ch;
-          else
-            ret =
-              ret +
-              "<span style='color: " +
-              this.getRandomColor() +
-              ";'>" +
-              ch +
-              "</span>";
-        else ht = ht + ch;
-        if (inHtml && ch === ";") {
-          inHtml = false;
-        }
-        if (!inHtml && ht.length) {
-          ret =
-            ret +
-            "<span style='color: " +
-            this.getRandomColor() +
-            ";'>" +
-            ht +
-            "</span>";
-          ht = "";
-        }
-      }
-      return ret;
-    }
-  }
-};
+}
 </script>
 
 <style>
+#mainlogo {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+.phone {
+    color: #333;
+}
 </style>
