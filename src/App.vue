@@ -47,9 +47,6 @@ export default {
 body {
   margin: 0;
 }
-dt {
-  font-weight: bold;
-}
 #app {
   font-family: "Lora", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
