@@ -16,8 +16,8 @@
 export default {
   data() {
     return {
-      title: "Хостел Радуга",
-      subtitle: "Рады вам!",
+      title: "Хостел &laquo;Радуга&raquo;",
+      subtitle: "Рады вам!"
     };
   },
   methods: {
@@ -34,14 +34,37 @@ export default {
     coloredTitle: function() {
       var inHtml = false;
       var ret = "";
+      var ht = "";
       for (var i = 0; i < this.title.length; ++i) {
-        ret =
-          ret +
-          "<span style='color: " +
-          this.getRandomColor() +
-          ";'>" +
-          this.title.charAt(i) +
-          "</span>";
+        var ch = this.title.charAt(i);
+        if (ch === "&") {
+          inHtml = true;
+        }
+
+        if (!inHtml)
+          if (ch === " ") ret = ret + ch;
+          else
+            ret =
+              ret +
+              "<span style='color: " +
+              this.getRandomColor() +
+              ";'>" +
+              ch +
+              "</span>";
+        else ht = ht + ch;
+        if (inHtml && ch === ";") {
+          inHtml = false;
+        }
+        if (!inHtml && ht.length) {
+          ret =
+            ret +
+            "<span style='color: " +
+            this.getRandomColor() +
+            ";'>" +
+            ht +
+            "</span>";
+          ht = "";
+        }
       }
       return ret;
     }

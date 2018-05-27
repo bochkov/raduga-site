@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Caveat|Lora");
+@import url("https://fonts.googleapis.com/css?family=Caveat|Bad+Script|Marck+Script|Lora|Playfair+Display+SC");
 body {
   margin: 0;
 }
@@ -79,6 +79,7 @@ body {
   text-align: justify;
 }
 .title {
+  font-family: "Playfair Display SC", sans-serif;
   font-size: 5em;
   font-weight: bolder;
 }

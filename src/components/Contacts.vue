@@ -26,7 +26,7 @@ export default {
                 },
                 {
                     icon: 'fas fa-phone',
-                    text: '+7 (912) 294-44-60',
+                    text: '+7 (912) 242-72-33',
                     style: 'color: darkgreen;'
                 },
                 {

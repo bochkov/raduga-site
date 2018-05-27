@@ -1,5 +1,5 @@
 <template>
-    <el-row id="carousel-row" type="flex" justify="center" class="celem">
+    <el-row id="carousel-row" type="flex" justify="center" class="celem hidden-sm-and-down">
         <el-col style="width: 1000px;">
             <el-carousel :interval="10000" trigger="click" height="600px" indicator-position="outside">
                 <el-carousel-item v-for="index in 10" :key="index">
@@ -15,7 +15,7 @@
 export default {
   methods: {
     rurl: function(idx) {
-      var ret = 
+      var ret =
         "https://fakeimg.pl/1000x600/333/cccc00?text=Raduga+" +
         idx +
         "&font=lobster";
