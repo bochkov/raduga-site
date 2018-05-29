@@ -21,16 +21,60 @@ export default {
           title: "В пяти минутах ходьбы - &laquo;Екатеринбург-Арена&raquo;"
         },
         {
-          url: require("../assets/gal4.png"),
-          title: "Розовая комната"
+          url: require("../assets/gal6.png"),
+          title: ""
         },
         {
-          url: require("../assets/gal1.png"),
-          title: "Желтая комната"
+          url: require("../assets/gal7.png"),
+          title: ""
         },
         {
-          url: require("../assets/gal3.png"),
-          title: "В одной из комнат"
+          url: require("../assets/gal8.png"),
+          title: ""
+        },
+        {
+          url: require("../assets/gal9.png"),
+          title: ""
+        },
+        {
+          url: require("../assets/gal10.png"),
+          title: ""
+        },
+        {
+          url: require("../assets/gal11.png"),
+          title: "Зона ресепшн"
+        },
+        {
+          url: require("../assets/gal12.png"),
+          title: "Зона ресепшн"
+        },
+        {
+          url: require("../assets/gal13.png"),
+          title: "Санузел"
+        },
+        {
+          url: require("../assets/gal14.png"),
+          title: "На нашей кухне"
+        },
+        {
+          url: require("../assets/gal15.png"),
+          title: "На нашей кухне"
+        },
+        {
+          url: require("../assets/gal16.png"),
+          title: "На нашей кухне"
+        },
+        {
+          url: require("../assets/gal17.png"),
+          title: "Различные игры для досуга"
+        },
+        {
+          url: require("../assets/gal18.png"),
+          title: "Различные игры для досуга"
+        },
+        {
+          url: require("../assets/gal19.png"),
+          title: "Окна балкона выходят на тихую улочку"
         }
       ]
     };
