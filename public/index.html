@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.png">
-    <title>Хостел "Радуга" - Рады вам!</title>
-    <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab9456c7bf00584b97bcf4162bbbdb98d38d650ab40240a40184661a734bafb16&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true&amp;id=map"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but raduga site doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app">
 
-    </div>
-    
-    <!-- Yandex.Metrika counter --> 
-    <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49030703 = new Ya.Metrika({ id:49030703, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49030703" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
-    <!-- /Yandex.Metrika counter -->
-    
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.png">
+  <title>Хостел "Радуга" - Рады вам!</title>
+  <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab9456c7bf00584b97bcf4162bbbdb98d38d650ab40240a40184661a734bafb16&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true&amp;id=map"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
+  <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but raduga site doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app">
+
+  </div>
+
+  <!-- Yandex.Metrika counter -->
+  <!-- <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49030703 = new Ya.Metrika({ id:49030703, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49030703" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  -->
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- OtelMS -->
+  <script>
+    var is_safari = navigator.userAgent.indexOf("Safari") > -1; // safari detection
+    if (is_safari) {
+
+      if (!$.cookie("hostelraduga_fixed")) {
+        $.cookie("hostelraduga_fixed", "fixed", { expires: 365, path: "/" }); // 1 year
+        if (document.body.clientWidth > 767) { window.location.replace("//hostelraduga-book.otelms.com/_safari_fix.html"); }
+        else { window.location.replace("//hostelraduga-book-m.otelms.com/_safari_fix.html"); }
+      }
+    }
+  </script>
+
+  <script type="text/javascript">// <![CDATA[
+    var myEventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+    var myEventListener = window[myEventMethod];
+    var myEventMessage = myEventMethod == "attachEvent" ? "onmessage" : "message";
+    myEventListener(myEventMessage, function (e) {
+      if (e.data === parseInt(e.data)) {
+        document.getElementById("my-iframe-id").height = e.data + "px"; console.log(e.data);
+      }
+    }, false);
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+      var regex = new RegExp("[\?" + "\u0026" + "]" + name + "=([^" + "\u0026" + "#]*)"),
+        results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    // ]]>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      var url;
+      if (document.body.clientWidth > 767) {
+        url = "//hostelraduga-book.otelms.com/bookit/step1/?inline=true" + "\u0026"
+          + "datein=" + getParameterByName("datein") + "\u0026"
+          + "dateout=" + getParameterByName("dateout") + "\u0026"
+          + "lang=" + getParameterByName("lang");
+      }
+      else {
+        url = "//hostelraduga-book-m.otelms.com/bookit/step1/?inline=true" + "\u0026"
+          + "datein=" + getParameterByName("datein") + "\u0026"
+          + "dateout=" + getParameterByName("dateout") + "\u0026"
+          + "lang=" + getParameterByName("lang");
+      };
+      document.getElementById("my-iframe-id").src = url;
+    });
+// ]]>
+  </script>
+  <!-- end of OtelMS -->
+
+</body>
+
 </html>

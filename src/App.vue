@@ -4,6 +4,7 @@
       <Header />
     </el-header>
     <el-main>
+      <Book />
       <Advantage />
       <About />
       <Gallery />
@@ -20,6 +21,7 @@
 <script>
 import Header from "./components/Header.vue";
 import About from "./components/About.vue";
+import Book from "./components/Book.vue";
 import Advantage from "./components/Advantage.vue";
 import Reviews from "./components/Reviews.vue";
 import Map from "./components/Map.vue";
@@ -31,6 +33,7 @@ export default {
   name: "app",
   components: {
     Header,
+    Book,
     About,
     Advantage,
     Map,
