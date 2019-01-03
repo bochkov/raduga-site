@@ -29,7 +29,7 @@ export default {
 #reviews {
   font-family: "Caveat", sans-serif;
   font-size: 1.2em;
-  background-color: #eaffed;
+  background-color: white;
 }
 .author {
   text-align: right;

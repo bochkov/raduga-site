@@ -1,25 +1,30 @@
 <template>
-    <el-row id="carousel-row" type="flex" justify="center" class="celem hidden-sm-and-down">
-        <el-col style="width: 1000px;">
-            <el-carousel :interval="10000" trigger="click" height="600px" indicator-position="outside">
-                <el-carousel-item v-for="(image, index) in images" :key="index">
-                    <span class="img-title" v-html="image.title"></span>
-                    <img :src="image.url" />
-                </el-carousel-item>
-            </el-carousel>
-        </el-col>
+  <div id="gallery-row">
+    <el-row v-if="mode == 'carousel'" type="flex" justify="center" class="celem">
+      <el-col style="width: 1000px;">
+        <el-carousel :interval="10000" trigger="click" height="650px" indicator-position="outside">
+          <el-carousel-item v-for="(image, index) in images" :key="index">
+            <span v-html="image.title"></span>
+            <img :src="image.url">
+          </el-carousel-item>
+        </el-carousel>
+      </el-col>
     </el-row>
+    <el-row v-else>
+      <div class="img-list" v-for="(image, index) in images" :key="index">
+        <img :src="image.url">
+        <span v-html="image.title"></span>
+      </div>
+    </el-row>
+  </div>
 </template>
 
 <script>
 export default {
+  props: ["mode"],
   data() {
     return {
       images: [
-        {
-          url: require("@/assets/gal5.png"),
-          title: "В пяти минутах ходьбы - &laquo;Екатеринбург-Арена&raquo;"
-        },
         {
           url: require("@/assets/gal6.png"),
           title: ""
@@ -75,6 +80,10 @@ export default {
         {
           url: require("@/assets/gal19.png"),
           title: "Окна балкона выходят на тихую улочку"
+        },
+        {
+          url: require("@/assets/gal5.png"),
+          title: "В пяти минутах ходьбы - &laquo;Екатеринбург-Арена&raquo;"
         }
       ]
     };
@@ -83,10 +92,24 @@ export default {
 </script>
 
 <style>
-#carousel-row {
+#gallery-row {
   background-color: #eaffed;
 }
-.img-title {
-  font-size: 1.5em;
+
+.el-carousel {
+  text-align: center;
+  font-size: 1.1em;
+}
+.el-carousel img {
+  height: 100%;
+}
+
+.img-list {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 0.9em;
+}
+.img-list img {
+  width: 100%;
 }
 </style>

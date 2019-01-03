@@ -5,8 +5,13 @@
     </el-header>
     <el-main>
       <Advantage />
+      <div class="hidden-sm-and-down">
+        <Gallery mode="carousel" />
+      </div>
+      <div class="hidden-md-and-up">
+        <Gallery mode="list" />
+      </div>
       <About />
-      <Gallery />
       <Map />
       <Reviews />
       <Contacts />

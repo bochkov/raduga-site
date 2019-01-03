@@ -55,6 +55,7 @@ export default {
 
 <style>
 #adv-row {
+  padding-top: 30px;
   background-color: #eaffed;
 }
 </style>

@@ -12,6 +12,6 @@
 
 <style scoped>
 #map-row {
-    background-color: #eaffed;
+    background-color: white;
 }
 </style>
