@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Caveat|Bad+Script|Marck+Script|Lora|Playfair+Display+SC");
+@import url("https://fonts.googleapis.com/css?family=Caveat|Bad+Script|Marck+Script|Overpass+Mono|Lora|Playfair+Display+SC");
 body {
   margin: 0;
 }
@@ -67,6 +67,7 @@ body {
   padding: 0;
   padding-top: 40px;
   background-image: url("./assets/mainpic.png");
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }

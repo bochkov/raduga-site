@@ -4,7 +4,7 @@
       <div class="contact">
         <i :class="contact.icon" :style="contact.style" class="muted-icon fa-2x"></i>
         <p/>
-        <span v-html="contact.text"/>
+        <span :style="contact.text_style" v-html="contact.text"/>
       </div>
     </el-col>
   </el-row>
@@ -32,7 +32,8 @@ export default {
           index: 2,
           icon: "fas fa-phone",
           text: "+7 (912) 24-27-233<br/>+7 (912) 29-44-460",
-          style: "color: darkgreen;"
+          style: "color: darkgreen;",
+          text_style: "font-family: Overpass Mono; font-size: 0.9em"
         }
       ]
     };
