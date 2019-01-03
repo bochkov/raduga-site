@@ -35,21 +35,21 @@ export default {
 
 <style>
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hidden-md-and-up .el-row {
-    padding: 0;
+  padding: 0;
 }
 .hidden-md-and-up .pad {
-    padding: 20px;
+  padding: 20px;
 }
 .hidden-sm-and-down .el-row {
-    padding: 20px;
+  padding: 20px;
 }
 .hidden-sm-and-down .el-col {
-    padding: 10px 20px;
-    vertical-align: top;
+  padding: 10px 20px;
+  vertical-align: top;
 }
 </style>
