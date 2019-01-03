@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="adv">
     <div class="hidden-md-and-up">
       <el-row>
         <el-col>
@@ -39,16 +39,16 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.hidden-md-and-up .el-row {
+.adv .hidden-md-and-up .el-row {
   padding: 0;
 }
-.hidden-md-and-up .pad {
+.adv .hidden-md-and-up .pad {
   padding: 20px;
 }
-.hidden-sm-and-down .el-row {
+.adv .hidden-sm-and-down .el-row {
   padding: 20px;
 }
-.hidden-sm-and-down .el-col {
+.adv .hidden-sm-and-down .el-col {
   padding: 10px 20px;
   vertical-align: top;
 }

@@ -11,7 +11,7 @@
       <Reviews />
       <Contacts />
     </el-main>
-    <el-footer height="100px">
+    <el-footer height="120px">
       <Footer />
     </el-footer>
   </el-container>
