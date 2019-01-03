@@ -17,63 +17,63 @@ export default {
     return {
       images: [
         {
-          url: require("../assets/gal5.png"),
+          url: require("@/assets/gal5.png"),
           title: "В пяти минутах ходьбы - &laquo;Екатеринбург-Арена&raquo;"
         },
         {
-          url: require("../assets/gal6.png"),
+          url: require("@/assets/gal6.png"),
           title: ""
         },
         {
-          url: require("../assets/gal7.png"),
+          url: require("@/assets/gal7.png"),
           title: ""
         },
         {
-          url: require("../assets/gal8.png"),
+          url: require("@/assets/gal8.png"),
           title: ""
         },
         {
-          url: require("../assets/gal9.png"),
+          url: require("@/assets/gal9.png"),
           title: ""
         },
         {
-          url: require("../assets/gal10.png"),
+          url: require("@/assets/gal10.png"),
           title: ""
         },
         {
-          url: require("../assets/gal11.png"),
+          url: require("@/assets/gal11.png"),
           title: "Зона ресепшн"
         },
         {
-          url: require("../assets/gal12.png"),
+          url: require("@/assets/gal12.png"),
           title: "Зона ресепшн"
         },
         {
-          url: require("../assets/gal13.png"),
+          url: require("@/assets/gal13.png"),
           title: "Санузел"
         },
         {
-          url: require("../assets/gal14.png"),
+          url: require("@/assets/gal14.png"),
           title: "На нашей кухне"
         },
         {
-          url: require("../assets/gal15.png"),
+          url: require("@/assets/gal15.png"),
           title: "На нашей кухне"
         },
         {
-          url: require("../assets/gal16.png"),
+          url: require("@/assets/gal16.png"),
           title: "На нашей кухне"
         },
         {
-          url: require("../assets/gal17.png"),
+          url: require("@/assets/gal17.png"),
           title: "Различные игры для досуга"
         },
         {
-          url: require("../assets/gal18.png"),
+          url: require("@/assets/gal18.png"),
           title: "Различные игры для досуга"
         },
         {
-          url: require("../assets/gal19.png"),
+          url: require("@/assets/gal19.png"),
           title: "Окна балкона выходят на тихую улочку"
         }
       ]

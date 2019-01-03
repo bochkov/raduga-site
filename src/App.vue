@@ -4,7 +4,6 @@
       <Header />
     </el-header>
     <el-main>
-      <Book />
       <Advantage />
       <About />
       <Gallery />
@@ -56,7 +55,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .celem {
-  padding: 40px 0;
+  padding: 20px 20px;
 }
 .el-header {
   text-align: center;
@@ -78,7 +77,7 @@ body {
 }
 .text {
   font-size: 1.5em;
-  text-align: justify;
+  text-align: left;
 }
 .title {
   font-family: "Playfair Display SC", sans-serif;
@@ -87,12 +86,15 @@ body {
 }
 .title-2 {
   font-size: 2em;
+  text-align: center;
 }
 .subtitle-2 {
   font-size: 1.2em;
+  text-align: center;
 }
 .subtitle {
   font-size: 2.5em;
+  text-align: center;
 }
 .el-button {
   margin: 5px 5px;
