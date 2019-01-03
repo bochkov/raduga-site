@@ -12,6 +12,24 @@
     crossorigin="anonymous"></script>
   <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
   <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
+  <script>
+    var $j = jQuery.noConflict();
+    var is_safari = navigator.userAgent.indexOf("Safari") > -1; // safari detection
+    if (is_safari) {
+      if (!$j.cookie("hostelraduga_fixed")) {
+        $j.cookie("hostelraduga_fixed", "fixed", { expires: 365, path: "/" }); // 1 year
+        if (document.body.clientWidth > 767) {
+          window.location.replace(
+            "//hostelraduga-book.otelms.com/_safari_fix.html"
+          );
+        } else {
+          window.location.replace(
+            "//hostelraduga-book-m.otelms.com/_safari_fix.html"
+          );
+        }
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -23,7 +41,7 @@
   </div>
 
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49030703 = new Ya.Metrika({ id:49030703, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49030703" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+  <!-- <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49030703 = new Ya.Metrika({ id:49030703, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49030703" style="position:absolute; left:-9999px;" alt="" /></div></noscript>  -->
   <!-- /Yandex.Metrika counter -->
 
 </body>
