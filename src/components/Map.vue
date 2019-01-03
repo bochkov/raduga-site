@@ -7,6 +7,7 @@
 </template>
 
 <script>
+// init script in index.html
 </script>
 
 <style scoped>
