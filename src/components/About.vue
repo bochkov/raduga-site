@@ -3,7 +3,7 @@
     <el-col>
       <div class="title-2"></div>
       <div class="text">
-        <span class="subtitle-2">Стоимость проживания - от 449 ₽ в сутки.</span>
+        <span class="subtitle-2">Стоимость проживания - от 449 ₽/сутки.</span>
         <div class="ulist">
           <span class="list-title">Бесплатно:</span>
           <ul>

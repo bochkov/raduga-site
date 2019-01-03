@@ -4,7 +4,7 @@
       <el-col style="width: 1000px;">
         <el-carousel :interval="10000" trigger="click" height="650px" indicator-position="outside">
           <el-carousel-item v-for="(image, index) in images" :key="index">
-            <span v-html="image.title"></span>
+            <div v-html="image.title"></div>
             <img :src="image.url">
           </el-carousel-item>
         </el-carousel>
