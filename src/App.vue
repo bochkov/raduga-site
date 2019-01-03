@@ -4,6 +4,7 @@
       <Header />
     </el-header>
     <el-main>
+      <Book />
       <Advantage />
       <div class="hidden-sm-and-down">
         <Gallery mode="carousel" />
