@@ -13,7 +13,7 @@
       <a href="mailto:raduga-hostelekb@yandex.ru" target="_blank">
         <el-button size="mini" circle icon="fas fa-envelope fa-2x"></el-button>
       </a>
-      <p class="subtitle-2 phone">+7 (912) 24-27-233<br>+7 (912) 29-44-460
+      <p class="subtitle-2 phone">+7 (912) 24-27-233
       </p>
     </el-col>
   </el-row>
